@@ -98,12 +98,11 @@ module.exports = (env, argv) => {
         template: './public/index.html',
         filename: 'index.html'
       }),
-      // new CopyWebpackPlugin({
-      //   patterns: [
-      //     { from: 'public/css', to: 'css' },
-      //     { from: 'public/js', to: 'js' },
-      //   ],
-      // }),
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'public/img', to: 'img' },
+        ],
+      }),
     ]
   }
 }

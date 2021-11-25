@@ -5,8 +5,33 @@
 }
 
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../../public/fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-family:'InterZeller';
+  font-weight:700;
+  font-display:swap;
+  src: url('../../public/fonts/InterZeller-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:600;
+  font-display:swap;
+  src: url('../../public/fonts/InterZeller-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:500;
+  src: url('../../public/fonts/InterZeller-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:400;
+  src: url('../../public/fonts/InterZeller-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:300;
+  src: url('../../public/fonts/InterZeller-Light.ttf') format('truetype');
 }

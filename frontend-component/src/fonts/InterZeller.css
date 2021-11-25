@@ -1,0 +1,25 @@
+@font-face {
+  font-family:'InterZeller';
+  font-weight:700;
+  font-display:swap;
+  src: url('fonts/InterZeller-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:600;
+  font-display:swap;
+  src: url('fonts/InterZeller-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:500;
+  src: url('fonts/InterZeller-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'InterZeller';
+  font-weight:300;
+  src: url('fonts/InterZeller-Light.ttf') format('truetype');
+}

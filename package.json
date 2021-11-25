@@ -1,8 +1,7 @@
 {
-  "name": "Webpack-React-Ts",
+  "name": "zeller-code-challenge",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "lint-css": "stylelint 'src/**/*.{c,sc,le}ss'",
     "fix-css": "printf '\\033[43mNote: You may need to run this again if any of your CSS property names contain uppercase letters.\\033[0m' && stylelint 'src/**/*.{c,sc,le}ss' --fix -f 'verbose'",
@@ -12,8 +11,7 @@
     "test": "jest",
     "start": "webpack serve --open",
     "devbuild": "webpack --mode development",
-    "build": "webpack --mode production",
-    "cssExtractBuild": "webpack --config ./webpack.css.extract.config.js"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "aws-amplify": "^4.3.8",
