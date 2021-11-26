@@ -11,7 +11,9 @@
     "test": "jest",
     "start": "webpack serve --open",
     "devbuild": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "integration-local": "cypress open --config pageLoadTimeout=30000,baseUrl=http://localhost:3002",
+    "integration-dev": "cypress run --config pageLoadTimeout=30000,baseUrl=https://mydatahack.github.io/zeller-code-challenge/"
   },
   "dependencies": {
     "@aws-amplify/api-graphql": "^2.2.15",
@@ -32,6 +34,7 @@
     "css-loader": "^5.2.4",
     "css-minimizer-webpack-plugin": "^2.0.0",
     "css-modules-typescript-loader": "^4.0.1",
+    "cypress": "^9.1.0",
     "enzyme": "^3.11.0",
     "eslint": "^7.25.0",
     "eslint-config-airbnb": "^18.2.1",
