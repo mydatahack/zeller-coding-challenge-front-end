@@ -65,6 +65,12 @@
       "rules": {
         "@typescript-eslint/no-empty-interface": ["off"]
       }
+    },
+    {
+      "files": [ "src/css/global.scss.d.ts" ],
+      "rules": {
+        "@typescript-eslint/no-empty-interface": ["off"]
+      }
     }
   ]
 }

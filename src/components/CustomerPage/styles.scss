@@ -7,35 +7,35 @@
 // Mobile
 .withController {
   width: 95%;
- }
+}
 
 // Tablet
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .withController {
     width: 90%;
-  }  
+  }
 }
 
 // Small Desktop
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .withController {
     width: 80%;
-  } 
- }
+  }
+}
 
 // Desktop
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .withController {
     width: 50%;
-  } 
+  }
 }
 
 // Large Desktop
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
   .withController {
     width: 40%;
   }
- }
+}
 
 .appHeading {
   margin: 40px 0;
