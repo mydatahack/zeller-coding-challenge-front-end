@@ -3,8 +3,8 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        'Welcome', ['Introduction', 'Change Log'],
-        'Examples', ['Globals', 'Atoms', 'Molecules']
+        'Welcome', ['Introduction'],
+        'Examples', ['Atoms', 'Molecules', 'Forms', 'Global']
       ],
     },
   }
