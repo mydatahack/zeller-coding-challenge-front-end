@@ -11,7 +11,7 @@ export const UserTypeSelector: React.VFC = () => {
   );
 
   const handleInputChange = (input: UserType) => {
-    setUserType({ userType: input });
+    setUserType(input);
   };
 
   return (
@@ -20,7 +20,7 @@ export const UserTypeSelector: React.VFC = () => {
       <RadioButtonGroup
         name="User Type"
         onChange={handleInputChange}
-        value={userType?.userType}
+        value={userType}
       >
         {Object.values(UserType).map((type: string) => (
           <RadioButton

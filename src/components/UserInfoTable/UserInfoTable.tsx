@@ -11,7 +11,7 @@ export const UserInfoTable: React.VFC = () => {
 
   const users = (customers || [])
     .filter(
-      (customer) => customer?.role?.toLowerCase() === contextUserType?.userType?.toLowerCase(),
+      (customer) => customer?.role?.toLowerCase() === contextUserType?.toLowerCase(),
     )
     .map((customer) => ({ userName: customer?.name, userType: customer?.role }));
 

@@ -4,18 +4,10 @@ import { UserType } from '../enums';
 
 export type ZellerCustomersQueryProps = ListZellerCustomersDataItem[];
 
-export type UserTypeProps = {
-  userType: UserType;
-}
-
 export type ZellerCustomerProviderContextProps = {
   customers: ZellerCustomersQueryProps;
-  userType: UserTypeProps;
-  setUserType: Dispatch<SetStateAction<UserTypeProps>>;
-  error: ErrorProps;
-  fetched: boolean;
-}
-
-export type ErrorProps = {
+  userType: UserType;
+  setUserType: Dispatch<SetStateAction<UserType>>;
   error: boolean;
+  fetched: boolean;
 }

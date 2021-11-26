@@ -1,10 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { GraphQLResult } from '@aws-amplify/api-graphql';
-import {
-  ZellerCustomersQueryProps,
-  ErrorProps,
-} from './types';
+import { ZellerCustomersQueryProps } from './types';
 import { ListZellerCustomersData } from '../types';
 import { ListZellerCustomers } from '../graphql/queries';
 
@@ -14,7 +11,7 @@ Amplify.configure(awsconfig);
 
 export const fetchCustomers = async (
   setCustomers: Dispatch<SetStateAction<ZellerCustomersQueryProps>>,
-  setError: Dispatch<SetStateAction<ErrorProps>>,
+  setError: Dispatch<SetStateAction<boolean>>,
   setFetched: Dispatch<SetStateAction<boolean>>,
 ): Promise<void> => {
   try {
@@ -30,7 +27,7 @@ export const fetchCustomers = async (
     setCustomers(customerList);
     setFetched(true);
   } catch (err) {
-    setError({ error: true });
+    setError(true);
     setFetched(true);
   }
 };
