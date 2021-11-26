@@ -12,14 +12,15 @@ export const getClassForFontStyle = (fontStyle: HeadingFontStyle) => styles[font
 export type HeadingProps = {
   level: HeadingLevel;
   renderAs?: HeadingFontStyle;
+  className?: string;
 };
 
-export const Heading: React.FC<HeadingProps> = ({ children, level, renderAs }) => {
+export const Heading: React.FC<HeadingProps> = ({ children, level, renderAs, className }) => {
   const ElementTag = `h${level}` as HeadingTag;
   const fontStyle = renderAs || (`heading${level}` as HeadingFontStyle);
 
   return (
-    <ElementTag className={joinClassNames(styles.heading, getClassForFontStyle(fontStyle))}>
+    <ElementTag className={joinClassNames(styles.heading, getClassForFontStyle(fontStyle), className)}>
       {children}
     </ElementTag>
   );

@@ -3,9 +3,9 @@ import { shallow } from 'enzyme';
 import { UserTable } from '.';
 
 const testData = [
-  { userName: 'John Smith', role: 'Admin' },
-  { userName: 'Adam Muller', role: 'Admin' },
-  { userName: 'Perri Smith', role: 'Admin' },
+  { userName: 'John Smith', userType: 'Admin' },
+  { userName: 'Adam Muller', userType: 'Admin' },
+  { userName: 'Perri Smith', userType: 'Admin' },
 ];
 
 describe('<UserAvatar>', () => {

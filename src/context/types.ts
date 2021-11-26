@@ -13,6 +13,7 @@ export type ZellerCustomerProviderContextProps = {
   userType: UserTypeProps;
   setUserType: Dispatch<SetStateAction<UserTypeProps>>;
   error: ErrorProps;
+  fetched: boolean;
 }
 
 export type ErrorProps = {

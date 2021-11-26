@@ -20,13 +20,14 @@ export const ZellerCustomerContextProvider: React.FC = ({ children }) => {
   const [customers, setCustomers] = useState<ZellerCustomersQueryProps>();
   const [userType, setUserType] = useState<UserTypeProps>();
   const [error, setError] = useState<ErrorProps>();
+  const [fetched, setFetched] = useState<boolean>(false);
 
   useEffect(() => {
     setUserType(adminUserType);
   }, []);
 
   useEffect(() => {
-    fetchCustomers(setCustomers, setError);
+    fetchCustomers(setCustomers, setError, setFetched);
   }, []);
 
   const values = {
@@ -34,6 +35,7 @@ export const ZellerCustomerContextProvider: React.FC = ({ children }) => {
     userType,
     setUserType,
     error,
+    fetched,
   };
 
   return <Provider value={values}>{children}</Provider>;

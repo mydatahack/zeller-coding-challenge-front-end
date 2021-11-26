@@ -1,4 +1,4 @@
-import { joinClassNames, getFirstLetterInCapital } from '.';
+import { joinClassNames, getFirstLetterInCapital, capitalise } from '.';
 
 describe('Shared util functions', () => {
   test('joinClassNames() should join class names correctly', () => {
@@ -16,5 +16,10 @@ describe('Shared util functions', () => {
   test('getFirstLetterInCapital() should return value correctly', () => {
     const letter = getFirstLetterInCapital('john smith');
     expect(letter).toEqual('J')
-  })
+  });
+
+  it('capitalise() should capitalise string correctly', () => {
+    const string = 'MANAGER';
+    expect(capitalise(string)).toEqual('Manager');
+  });
 });

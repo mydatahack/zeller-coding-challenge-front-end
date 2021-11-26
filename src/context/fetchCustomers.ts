@@ -15,8 +15,12 @@ Amplify.configure(awsconfig);
 export const fetchCustomers = async (
   setCustomers: Dispatch<SetStateAction<ZellerCustomersQueryProps>>,
   setError: Dispatch<SetStateAction<ErrorProps>>,
+  setFetched: Dispatch<SetStateAction<boolean>>,
 ): Promise<void> => {
   try {
+    // So that you can see how the loading state is implemented!
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     const customerData = await API.graphql(graphqlOperation(ListZellerCustomers));
     const customerList = (customerData as GraphQLResult<ListZellerCustomersData>)
       .data
@@ -24,8 +28,9 @@ export const fetchCustomers = async (
       .items;
 
     setCustomers(customerList);
+    setFetched(true);
   } catch (err) {
-    // Todo: maybe need prevData pattern?
     setError({ error: true });
+    setFetched(true);
   }
 };
