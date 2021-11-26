@@ -1,0 +1,20 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import { UserTable } from '.';
+
+<Meta title="Molecules/UserTable" component={UserTable} />
+
+# UserTable
+
+UserTable component.
+
+# Default
+
+<Canvas>
+  <Story name="default">
+    <UserTable users={[
+      { userName: "John Smith", role: "Admin" },
+      { userName: "Adam Muller", role: "Admin" },
+      { userName: "Perri Smith", role: "Admin" },
+    ]}/>
+  </Story>
+</Canvas>

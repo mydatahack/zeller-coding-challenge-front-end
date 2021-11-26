@@ -1,0 +1,18 @@
+@import '../../css/variables';
+
+$dimention: 36px;
+
+.avatarContainer {
+  width: $dimention;
+  height: $dimention;
+  background-color: $light-blue;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInitial {
+  font: $font-regular;
+  color: $primary-blue;
+}

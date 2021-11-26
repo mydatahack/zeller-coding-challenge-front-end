@@ -1,0 +1,15 @@
+@import '../../css/variables';
+
+.userDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font: $font-medium;
+}
+
+.userRole {
+  font: $font-small;
+  color: $gray-text;
+}

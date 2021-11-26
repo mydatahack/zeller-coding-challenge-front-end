@@ -4,7 +4,7 @@ export const parameters = {
     storySort: {
       order: [
         'Welcome', ['Introduction'],
-        'Examples', ['Atoms', 'Molecules', 'Forms', 'Global']
+        'Examples', ['Global', 'Atoms', 'Molecules', 'Forms']
       ],
     },
   }

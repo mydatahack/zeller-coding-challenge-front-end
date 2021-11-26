@@ -1,6 +1,5 @@
 @import '../../css/variables';
 
-
 @mixin action-state($focus-color, $cursor-type) {
   &:focus,
   &:hover {

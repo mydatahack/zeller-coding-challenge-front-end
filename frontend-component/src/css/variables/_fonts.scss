@@ -6,10 +6,14 @@ $font-semibold: 600;
 $font-bold: 700;
 
 $default-font-size: 1rem;
+$small-font-size: 0.875rem;
+$medium-font-size: 1.125rem;
 $default-line-height: 1.4;
 
 $font-heading-1: 600 2rem $default-font-family;
 $font-heading-2: 600 1.5rem $default-font-family;
 $font-heading-3: 600 1.16rem $default-font-family;
-$font-intro: 500 $default-font-size $default-font-family;
-$font-p-regular: 400 $default-font-size $default-font-family;
+$font-intro: 600 $medium-font-size $default-font-family;
+$font-medium: 400 $medium-font-size $default-font-family;
+$font-regular: 400 $default-font-size $default-font-family;
+$font-small: 300 $small-font-size $default-font-family;

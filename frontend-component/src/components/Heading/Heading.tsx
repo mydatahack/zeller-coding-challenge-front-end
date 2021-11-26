@@ -24,3 +24,5 @@ export const Heading: React.FC<HeadingProps> = ({ children, level, renderAs }) =
     </ElementTag>
   );
 };
+
+Heading.displayName = 'Heading';
