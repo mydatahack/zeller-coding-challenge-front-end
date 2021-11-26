@@ -1,11 +1,6 @@
-import { capitalise, joinClassNames } from './index';
+import { joinClassNames } from '.';
 
 describe('Shared util functions', () => {
-  it('Capitalise string correctly', () => {
-    const string = 'test string';
-    expect(capitalise(string)).toEqual('Test string');
-  });
-
   it('Join class names correctly', () => {
     const isActive = false;
     const isCompleted = true;
