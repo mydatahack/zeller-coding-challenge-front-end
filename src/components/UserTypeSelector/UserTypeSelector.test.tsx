@@ -37,7 +37,7 @@ describe('<UserTypeSelector />', () => {
   it('should call setUserType onChange', () => {
     const wrapper = setUp();
     wrapper.find('input').at(1)
-      .simulate('change', { target: { value: 'Manager' } });
-    expect(mockSetUserType).toHaveBeenCalledWith('Manager');
+      .simulate('change', { target: { value: 'MANAGER' } });
+    expect(mockSetUserType).toHaveBeenCalledWith('MANAGER');
   });
 });

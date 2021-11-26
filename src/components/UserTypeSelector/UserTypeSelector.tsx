@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ZellerCustomerContext } from '../../context/ZellerCustomerProvider';
 import { ZellerCustomerProviderContextProps } from '../../context/types';
-import { Heading, RadioButton, RadioButtonGroup } from '../../../frontend-component';
+import { Heading, RadioButton, RadioButtonGroup, capitalise } from '../../../frontend-component';
 import { UserType } from '../../enums';
 import styles from './styles.scss';
 
@@ -28,7 +28,7 @@ export const UserTypeSelector: React.VFC = () => {
             id={type}
             value={type}
           >
-            <span className={styles.label}>{type}</span>
+            <span className={styles.label}>{capitalise(type)}</span>
           </RadioButton>
         ))}
       </RadioButtonGroup>
