@@ -6,10 +6,10 @@ import {
   ErrorProps,
 } from './types';
 import { fetchCustomers } from './fetchCustomers';
-import { Role } from '../enums';
+import { UserType } from '../enums';
 
 const adminUserType: UserTypeProps = {
-  userType: Role.Admin,
+  userType: UserType.Admin,
 };
 
 export const ZellerCustomerContext = createContext<ZellerCustomerProviderContextProps>(undefined);

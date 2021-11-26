@@ -1,11 +1,11 @@
 import { Dispatch, SetStateAction } from 'react';
 import { ListZellerCustomersDataItem } from '../types';
-import { Role } from '../enums';
+import { UserType } from '../enums';
 
 export type ZellerCustomersQueryProps = ListZellerCustomersDataItem[];
 
 export type UserTypeProps = {
-  userType: Role;
+  userType: UserType;
 }
 
 export type ZellerCustomerProviderContextProps = {

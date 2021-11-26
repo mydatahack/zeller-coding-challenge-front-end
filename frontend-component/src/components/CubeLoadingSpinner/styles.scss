@@ -10,13 +10,13 @@
 }
 
 $spinner-width: 32px;
-$spinner-height: math.div($spinner-width, 3);
+$spinner-height: ($spinner-width / 3);
 $spinner-container-size: $spinner-width;
 $spinner-perspective: 2000px;
 $spinner-speed: 1.5s;
-$cube-face-offset-z: math.div($spinner-width, 2);
-$cube-offset-x: math.div($spinner-width, 3);
-$cube-offset-y: math.div($spinner-height, 2);
+$cube-face-offset-z: ($spinner-width / 2);
+$cube-offset-x: ($spinner-width / 3);
+$cube-offset-y: ($spinner-height / 2);
 
 .spinner3dContainer {
   width: $spinner-container-size;

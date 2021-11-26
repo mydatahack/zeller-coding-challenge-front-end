@@ -3,13 +3,13 @@ import styles from './styles.scss';
 
 export interface UserDescriptionProps {
   userName: string;
-  role: string;
+  userType: string;
 }
 
-export const UserDescription: React.VFC<UserDescriptionProps> = ({ userName, role }) => (
+export const UserDescription: React.VFC<UserDescriptionProps> = ({ userName, userType }) => (
   <div className={styles.userDescriptionContainer}>
     <span className={styles.userName}>{userName}</span>
-    <span className={styles.userRole}>{role}</span>
+    <span className={styles.userRole}>{userType}</span>
   </div>
 );
 

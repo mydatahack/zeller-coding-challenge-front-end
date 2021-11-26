@@ -1,2 +1,3 @@
 import { Heading } from './Heading';
-export { Heading };
+import { HeadingFontStyle } from './enums';
+export { Heading, HeadingFontStyle };

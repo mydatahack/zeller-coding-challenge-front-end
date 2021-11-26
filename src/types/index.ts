@@ -1,4 +1,4 @@
-import { Role } from '../enums';
+import { UserType } from '../enums';
 
 export interface ListZellerCustomersData {
   listZellerCustomers: ListZellerCustomersNode;
@@ -11,5 +11,5 @@ export interface ListZellerCustomersDataItem {
   email: string,
   id: ID;
   name: string;
-  role: Role;
+  role: UserType;
 }

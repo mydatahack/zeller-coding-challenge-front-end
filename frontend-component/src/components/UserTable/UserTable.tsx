@@ -11,6 +11,7 @@ export const UserTable: React.VFC<UserTableProps> = ({ users }) => {
 
   return (
     <table>
+      <tbody>
       {
         users.map(user => (
           <tr key={user.userName}>
@@ -18,12 +19,13 @@ export const UserTable: React.VFC<UserTableProps> = ({ users }) => {
               <UserAvatar
                 userInitial={getFirstLetterInCapital(user.userName)}
                 className={styles.infoSpacing}/>
-              <UserDescription userName={user.userName} role={user.role} />
+              <UserDescription userName={user.userName} userType={user.userType} />
             </td>
           </tr>
         ))
       }
-  </table>
+      </tbody>
+    </table>
   )
 }
 
