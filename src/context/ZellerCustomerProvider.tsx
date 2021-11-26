@@ -8,7 +8,7 @@ import { UserType } from '../enums';
 
 export const ZellerCustomerContext = createContext<ZellerCustomerProviderContextProps>(undefined);
 
-const { Provider } = ZellerCustomerContext;
+export const { Provider } = ZellerCustomerContext;
 
 export const ZellerCustomerContextProvider: React.FC = ({ children }) => {
   const [customers, setCustomers] = useState<ZellerCustomersQueryProps>();

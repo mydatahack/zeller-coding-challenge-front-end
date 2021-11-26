@@ -1,5 +1,7 @@
 # Zeller Coding Challenge Front End ✨
 
+The site can be found at https://mydatahack.github.io/zeller-code-challenge. The design system can be found at https://mydatahack.github.io/zeller-design.
+
 ## (1) Get Started
 
 Make sure to use Node version 14.
