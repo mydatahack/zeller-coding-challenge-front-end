@@ -7,9 +7,17 @@ import { UserInfoTable } from '../UserInfoTable';
 import styles from './styles.scss';
 
 export const CustomerPage: React.FC = () => {
-  const { fetched } = useContext<ZellerCustomerProviderContextProps>(
+  const { fetched, error } = useContext<ZellerCustomerProviderContextProps>(
     ZellerCustomerContext,
   );
+
+  if (error) {
+    return (
+      <Heading level={1} className={styles.appHeading}>
+        Oops.. Something went wrong😭
+      </Heading>
+    );
+  }
 
   return (
     <div className={styles.wrapper}>
