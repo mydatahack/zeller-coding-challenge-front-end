@@ -27,6 +27,28 @@ export const fetchCustomers = async (
     setCustomers(customerList);
     setFetched(true);
   } catch (err) {
+    // Even the endpoint is gone, the app still works! 🤟💀🤟
+    await fetchCustomersFallback(setCustomers, setError, setFetched);
+  }
+};
+
+const fallbackDataUrl = 'https://mydatahack.github.io/data/zeller/customer.json';
+
+const fetchCustomersFallback = async (
+  setCustomers: Dispatch<SetStateAction<ZellerCustomersQueryProps>>,
+  setError: Dispatch<SetStateAction<boolean>>,
+  setFetched: Dispatch<SetStateAction<boolean>>,
+): Promise<void> => {
+  try {
+    const customerData = await (await fetch(fallbackDataUrl)).json();
+    // console.log(`Yes, it's now fetched from my endpoint🤟💀🤟: ${JSON.stringify(customerData)}`);
+    const customerList = (customerData as GraphQLResult<ListZellerCustomersData>)
+      .data
+      .listZellerCustomers
+      .items;
+    setCustomers(customerList);
+    setFetched(true);
+  } catch (err) {
     setError(true);
     setFetched(true);
   }
