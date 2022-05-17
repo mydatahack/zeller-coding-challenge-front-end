@@ -7,14 +7,15 @@ export interface RadioButtonProps extends InputHTMLAttributes<HTMLInputElement> 
   hasError?: boolean;
 }
 
-export const RadioButton: React.FC<RadioButtonProps> = ({
-  id,
-  className,
-  children,
-  ...props
-}) => {
+export const RadioButton: React.FC<RadioButtonProps> = ({ id, className, children, ...props }) => {
   return (
-    <div className={joinClassNames(styles.radioButtonWrapper, props.checked && styles.checked, className)}>
+    <div
+      className={joinClassNames(
+        styles.radioButtonWrapper,
+        props.checked && styles.checked,
+        className
+      )}
+    >
       <input type="radio" id={id} {...props} />
       <label htmlFor={id}>
         <svg
@@ -28,9 +29,14 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
             cx="8"
             cy="8"
             r="7"
-            className={joinClassNames(styles.renderedRadioButton__base, props.checked && styles.checked)}
+            className={joinClassNames(
+              styles.renderedRadioButton__base,
+              props.checked && styles.checked
+            )}
           />
-          {props.checked && <circle cx="8" cy="8" r="4.5" className={styles.renderedRadioButton__checked} />}
+          {props.checked && (
+            <circle cx="8" cy="8" r="4.5" className={styles.renderedRadioButton__checked} />
+          )}
         </svg>
         {children}
       </label>

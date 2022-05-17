@@ -44,7 +44,7 @@ yarn integration-dev
 
 1. Design first approach
 
-The solution is driven by the design first approach by using Storybook. Each design elements are converted to React components in the design system. Then, these components are pulled in the main app. The design system lives in the same repo. They are simply imported in the main app components from the `frontend-component` folder. For styling, I am using `CSS Moudle`.
+The solution is driven by the design first approach by using Storybook. Each design elements are converted to React components in the design system. Then, these components are pulled in the main app. The design system lives in the same repo. They are simply imported in the main app components from the `frontend-component` folder. For styling, I am using `CSS Module`.
 
 2. State management
 
